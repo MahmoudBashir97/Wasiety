@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DAD2C5"
+    android:layout_marginTop="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="5dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/user_img"
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sh"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/user_img"
+            android:gravity="end|center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohammed Elgiad"
+                android:textSize="20sp"
+                android:textColor="#B33A3A"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السلام عليكم صديقى والله ابغى..."
+                android:textSize="16sp"
+                android:textColor="#751A2C"
+                android:textStyle="normal"
+                android:layout_marginRight="5dp"
+                android:textDirection="rtl"
+                android:gravity="end"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

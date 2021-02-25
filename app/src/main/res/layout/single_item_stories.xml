@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="119dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/my_story_img"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:src="@drawable/sh4"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="Ahmed Ali"
+            android:textColor="#261421"
+            android:textSize="14sp"
+            android:layout_below="@+id/my_story_img"
+            android:layout_centerHorizontal="true"
+            />
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/circle_white_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_play_arrow_24"
+                app:tint="#261421"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SplashScreenFragment"
+    android:background="@color/purple_500"
+    android:animateLayoutChanges="true">
+
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="وصيتي"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="#751A2C"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="وصيتك بأمان مع وصيتي"
+            android:textSize="30sp"
+            android:textColor="#751A2C"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_title"
+            android:gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/txt_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ebda2"
+        android:textSize="40sp"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"/>
+</RelativeLayout>

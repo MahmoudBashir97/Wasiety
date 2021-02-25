@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_registerationFragment"
+            app:destination="@id/registerationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/splashScreenFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerationFragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.RegisterationFragment"
+        android:label="fragment_registeration"
+        tools:layout="@layout/fragment_registeration" >
+        <action
+            android:id="@+id/action_registerationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@+id/registerationFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_create_New_Will_Fragment"
+            app:destination="@id/create_New_Will_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_myWill_Fragment"
+            app:destination="@id/myWill_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_about_Us_Fragment"
+            app:destination="@id/about_Us_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_chatsFragment_to_chat_Content_Fragment"
+            app:destination="@id/chat_Content_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/create_New_Will_Fragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.Create_New_Will_Fragment"
+        android:label="fragment_create__new__will"
+        tools:layout="@layout/fragment_create__new__will" >
+        <action
+            android:id="@+id/action_create_New_Will_Fragment_to_signature_Page_Fragment"
+            app:destination="@id/signature_Page_Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_create_New_Will_Fragment_to_will_To_Who_Fragment2"
+            app:destination="@id/will_To_Who_Fragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/myWill_Fragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.MyWill_Fragment"
+        android:label="fragment_my_will"
+        tools:layout="@layout/fragment_my_will" />
+    <fragment
+        android:id="@+id/about_Us_Fragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.Contactt_Us_Fragment"
+        android:label="fragment_about__us"
+        tools:layout="@layout/fragment_contact__us" />
+    <fragment
+        android:id="@+id/chat_Content_Fragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.Chat_Content_Fragment"
+        android:label="fragment_chat__content_"
+        tools:layout="@layout/fragment_chat__content_" />
+    <fragment
+        android:id="@+id/signature_Page_Fragment"
+        android:name="com.mahmoud.bashir.wasiety.fragments.Signature_Page_Fragment"
+        android:label="fragment_signature__page_"
+        tools:layout="@layout/fragment_signature__page_" />
+    <fragment
+        android:id="@+id/will_To_Who_Fragment2"
+        android:name="com.mahmoud.bashir.wasiety.fragments.Will_To_Who_Fragment"
+        android:label="fragment_will__to__who_"
+        tools:layout="@layout/fragment_will__to__who_" />
+</navigation>

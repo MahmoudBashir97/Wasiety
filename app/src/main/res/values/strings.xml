@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wasiety</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ebda2"><u>ابدأ</u></string>
+    <string name="conditions"><u>قبول الشروط والخدمات</u></string>
+    <string name="passForgot"><u>هل نسيت كلمة السر ؟</u></string>
+</resources>
